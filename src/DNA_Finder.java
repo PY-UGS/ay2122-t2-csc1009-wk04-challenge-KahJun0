@@ -7,7 +7,7 @@ public class DNA_Finder {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter DNA sequence");
         input_array = input.nextLine();
-        Pattern gtc = Pattern.compile("(GTC)");
+        Pattern gtc = Pattern.compile("GTC");
         Matcher matcher = gtc.matcher(input_array);
         long count = matcher.results().count();
         System.out.format("Number of GTC sequences is %d.\n", count);
